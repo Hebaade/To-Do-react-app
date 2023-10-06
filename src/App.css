@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
+body {
+    margin: 0;
+    overflow: hidden;
+    height: 100vh;
+    background: linear-gradient(to bottom, hsl(210, 71%, 38%), hsl(210, 56%, 63%), white);
+    background-repeat: no-repeat;
+    font-family: 'Source Code Pro', monospace;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,500&display=swap');
+
+.section {
+    padding: 5rem 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.section-center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 35rem;
+    margin-top: 8rem;
+    background-color: white;
+    border-radius: 0.25rem;
+    -webkit-border-radius: 0.25rem;
+    -moz-border-radius: 0.25rem;
+    -ms-border-radius: 0.25rem;
+    -o-border-radius: 0.25rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    padding: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.form {
+    display: flex;
+    justify-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+.edit-btn,
+.delete-btn {
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 0 0.10rem;
+    transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.edit-btn {
+    color: lightblue;
+}
+
+.delete-btn {
+    color: red;
 }
